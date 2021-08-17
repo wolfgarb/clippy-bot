@@ -1,5 +1,6 @@
 import os
 import discord
+my_secret = os.environ['TOKEN']
 
 client = discord.Client()
 
@@ -16,4 +17,4 @@ async def on_message(message):
   if message.content.startswith('shit'):
     await message.channel.send('It sounds like you are trying to do a swear. Do you need some help?')
 
-client.run(os.getenv('TOKEN'))
+
